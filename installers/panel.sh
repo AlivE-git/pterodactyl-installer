@@ -261,8 +261,8 @@ debian_dep() {
   install_packages "dirmngr ca-certificates apt-transport-https lsb-release"
 
   # Install PHP 8.3 using sury's repo
-  curl -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
-  echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
+  curl -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.su/php/apt.gpg
+  echo "deb https://packages.sury.su/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
 }
 
 alma_rocky_dep() {
